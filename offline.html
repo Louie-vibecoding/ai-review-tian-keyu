@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111111"><meta name="description" content="田柯宇事件公开证据评审：双方评分、对抗审查、舆情样本与事件还原。"><title>田柯宇事件 · AI 评审工作台</title><style>:root{--ink:#111;--muted:#646b73;--line:#dfe3e7;--wash:#f6f7f8;--red:#b8172c;--mono:Consolas,'Courier New',monospace;--sans:'Microsoft YaHei','PingFang SC',system-ui,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:#fff;color:var(--ink);font:15px/1.85 var(--sans)}a{color:inherit;text-underline-offset:4px}a:hover{color:var(--red)}button,select{font:inherit}button{cursor:pointer}a:focus-visible,button:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offset:3px}.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;background:#fff;z-index:100}.status{background:var(--ink);color:#fff;border-bottom:2px solid var(--red);padding:8px 24px;display:flex;justify-content:space-between;font:11px/1.6 var(--mono);letter-spacing:.08em}header{display:flex;align-items:center;justify-content:space-between;padding:23px 30px;border-bottom:1px solid var(--line);gap:16px}.brand{display:flex;align-items:center;gap:14px;font-weight:700;font-size:18px}.brand i{width:17px;height:17px;background:var(--ink);position:relative}.brand i:after{content:'';position:absolute;right:-5px;top:-5px;background:var(--red);width:7px;height:7px}.brand small{display:block;font:10px/1.8 var(--mono);letter-spacing:.12em;color:var(--muted);margin-top:4px}.outline{padding:8px 14px;border:1px solid var(--ink);text-decoration:none;font-size:12px;white-space:nowrap}nav{display:flex;position:sticky;top:0;z-index:10;padding:0 24px;background:#fff;border-bottom:1px solid var(--line);overflow-x:auto}nav a{font-size:12px;padding:13px 20px;white-space:nowrap;text-decoration:none;border-right:1px solid var(--line)}nav a:hover,nav a.active{background:var(--ink);color:#fff}main{max-width:1220px;padding:38px 24px 70px;margin:auto}section{margin-bottom:68px}section+section{padding-top:6px}.eyebrow,.section-head span{font:11px/1.6 var(--mono);letter-spacing:.13em;color:var(--muted)}h1{font-size:clamp(30px,3.4vw,47px);line-height:1.45;letter-spacing:-.025em;margin:18px 0;font-weight:650;max-width:1000px}h2{font-size:24px;line-height:1.55;margin:0}h3{font-size:16px;line-height:1.65;margin:10px 0}p{margin:10px 0 16px}.lead{max-width:950px;font-size:19px;line-height:1.9;color:#343a40}.small-lead{font-size:18px}.notice{display:grid;grid-template-columns:140px 1fr;border:1px solid var(--line);border-left:4px solid var(--ink);background:var(--wash);padding:15px 18px;gap:16px;font-size:13px;margin:22px 0}.notice b{font-size:13px}.hero-grid{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:18px;margin-top:26px}.metric{border:1px solid var(--line);padding:24px;min-width:0;border-top:3px solid var(--ink)}.metric p{font-size:14px;color:#4e555c}.metric small{display:block;border-top:1px solid var(--line);padding-top:12px;font-size:11px;color:var(--muted)}.big{font:64px/1.3 var(--mono);letter-spacing:-.07em;margin-top:12px}.big span{font:17px var(--mono);letter-spacing:0;color:var(--muted);margin-left:8px}.meter{height:4px;background:#e6e8eb;margin:16px 0 20px}.meter i{display:block;height:100%;background:var(--ink)}.summary h2{margin:27px 0 18px;font-size:28px}.summary a{font-size:13px}.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;border-bottom:2px solid var(--ink);padding-bottom:13px;margin:34px 0 20px}.section-head span{text-align:right}.answer-list article{display:grid;grid-template-columns:60px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}.answer-list article>b{font:30px var(--mono);color:var(--red);padding-top:8px}.answer-list h3{margin-top:0}.answer-list p{margin-bottom:0}.score-table-wrap{overflow:auto;margin:20px 0}table{border-collapse:collapse;width:100%;text-align:left;font-size:13px}th,td{border-bottom:1px solid var(--line);padding:16px 14px;vertical-align:top}th{background:var(--wash);font-size:12px;font-weight:500}td:first-child{min-width:160px}td:nth-child(2),td:nth-child(3){white-space:nowrap;font-family:var(--mono)}.group{display:block;font-size:11px;color:var(--muted)}details{border:1px solid var(--line);padding:13px 18px;margin:14px 0;font-size:13px}summary{cursor:pointer;font-weight:600}details p{padding-top:4px;margin-bottom:8px}.debate-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:24px 0}.debate{border:1px solid var(--line);padding:20px}.debate .who{font:11px var(--mono);color:var(--red)}.debate p{font-size:13px;color:#42484e}.debate .ruling{border-top:1px solid var(--line);padding-top:12px;color:var(--ink)}.filters{display:flex;gap:8px;flex-wrap:wrap}.filters button{background:#fff;border:1px solid var(--line);padding:7px 16px;font-size:13px}.filters .selected{background:var(--ink);color:#fff;border-color:var(--ink)}.filter-count{font-size:12px;color:var(--muted)}.claim{border:1px solid var(--line);padding:22px;margin:14px 0}.claim-head{display:flex;justify-content:space-between;gap:18px}.claim h3{margin:0;font-size:17px}.tag{white-space:nowrap;align-self:start;font-size:11px;border:1px solid #aab1b7;padding:2px 8px}.tag.strong{background:var(--ink);color:#fff;border-color:var(--ink)}.claim .assessment{font-size:14px;margin:14px 0}.claim details{background:var(--wash);border:0;margin:0;padding:12px 15px}.source-refs{font-size:12px;color:var(--muted);margin-top:14px;display:flex;gap:12px;flex-wrap:wrap}.platforms{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:22px 0}.platforms article{border:1px solid var(--line);padding:20px;min-width:0}.platforms h3{margin:0 0 16px}.platforms p{font-size:13px}.platforms small{font-size:11px;color:var(--muted)}.sample-big{font:38px/1.5 var(--mono);margin:10px 0}.sample-big small{display:block;font:11px var(--sans)}.samplebar{height:8px;background:#edf0f2;margin:20px 0}.samplebar i{height:100%;display:block;background:#313940}.muted{color:var(--muted);font-size:28px}.sample-toolbar{display:flex;gap:12px;align-items:center;border-bottom:1px solid var(--line);padding:15px 0;font-size:13px}.sample-toolbar select{padding:6px 12px;border:1px solid var(--line);background:white;max-width:180px}.sample-toolbar span{margin-left:auto;color:var(--muted);font-size:11px}.sample-row{display:grid;grid-template-columns:145px 140px 1fr 50px;gap:18px;padding:14px 0;border-bottom:1px solid var(--line);font-size:12px;align-items:start}.sample-row .meta{color:var(--muted);font-size:11px}.sample-row a{overflow-wrap:anywhere}.sample-row.excluded{opacity:.65}.stance{font-size:11px}.stance.critical{color:var(--red)}.sample-note{display:block;font-size:11px;color:var(--muted)}.reconstruction{padding:22px 26px;background:var(--wash);border-left:4px solid var(--ink)}.reconstruction p{font-size:14px}.timeline{border-left:1px solid #b4bbc2;margin:26px 0 28px 10px}.event{display:grid;grid-template-columns:135px 1fr;gap:18px;padding:4px 0 28px 24px;position:relative}.event:before{content:'';height:7px;width:7px;background:var(--ink);position:absolute;left:-4px;top:12px}.event time{font:12px/1.8 var(--mono);color:var(--muted)}.event h3{margin:0;font-size:15px}.event p{font-size:13px;margin:4px 0}.hypotheses{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.hypotheses article{border-top:2px solid var(--ink);padding-top:6px}.hypotheses p{font-size:13px}.audio-panel{display:grid;grid-template-columns:1fr 1fr;gap:32px;padding:24px;border:1px solid var(--line)}.audio-panel p{font-size:13px}.audio-links{display:flex;flex-wrap:wrap;gap:12px}audio{width:100%;margin:10px 0}.chapters{display:flex;flex-wrap:wrap;gap:8px}.chapters button{background:#fff;border:1px solid var(--line);font-size:11px;padding:7px 10px}#audio-status{font-size:11px;color:var(--muted)}.source{display:grid;grid-template-columns:45px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:13px}.source>b{font:12px var(--mono);padding-top:4px}.source p{margin:6px 0 0;font-size:12px;color:var(--muted)}.fine{font-size:12px;color:var(--muted)}code{font:11px var(--mono);overflow-wrap:anywhere}footer{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding:25px;font:11px/1.8 var(--mono);color:var(--muted)}
+@media(max-width:800px){.hero-grid,.platforms{grid-template-columns:1fr 1fr}.hero-grid>.summary,.platforms>article:last-child{grid-column:1/-1}.summary h2 br{display:none}.hypotheses{grid-template-columns:1fr}.audio-panel{grid-template-columns:1fr;gap:15px}.sample-row{grid-template-columns:110px 1fr 35px}.sample-row .stance{grid-column:2}.sample-row .reason{grid-column:1/3}.sample-row .origin{grid-column:3;grid-row:1/3}.status span:last-child{display:none}}
+@media(max-width:520px){body{font-size:14px}.status{padding:9px 15px;font-size:9px;gap:15px}.status span:nth-child(2){text-align:right}header{padding:19px 17px}.brand{font-size:16px;gap:11px}.brand small{font-size:8px}.outline{font-size:11px;padding:7px 9px}nav{padding:0 8px}nav a{padding:13px 14px;font-size:11px}main{padding:25px 17px 40px}h1{font-size:30px;margin-top:14px}.lead{font-size:16px}.notice{grid-template-columns:1fr;gap:6px;padding:13px 14px;font-size:12px}.hero-grid,.platforms,.debate-grid{grid-template-columns:1fr;gap:14px}.hero-grid>.summary,.platforms>article:last-child{grid-column:auto}.metric{padding:21px}.big{font-size:54px}.summary h2{font-size:25px;margin:15px 0}.section-head{margin-top:28px;gap:10px}.section-head h2{font-size:20px}.section-head span{font-size:8px;max-width:105px}.answer-list article{grid-template-columns:32px 1fr;gap:12px}.answer-list article>b{font-size:24px}.answer-list h3{font-size:15px}.score-table-wrap{margin-left:-2px;margin-right:-2px}table{min-width:690px}.claim{padding:17px}.claim-head{flex-wrap:wrap;gap:8px}.claim h3{font-size:16px}.claim .assessment{font-size:13px}.event{grid-template-columns:1fr;gap:5px;padding-left:19px}.sample-toolbar{gap:8px}.sample-toolbar span{max-width:90px;text-align:right}.sample-row{gap:8px}.sample-row .reason{font-size:12px}.audio-panel{padding:18px}.reconstruction{padding:17px}.source{grid-template-columns:28px 1fr;gap:10px}.source a{overflow-wrap:anywhere}footer{padding:20px 17px;flex-wrap:wrap;font-size:10px}section{margin-bottom:45px}.filters button{padding:7px 10px;font-size:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{nav,.filters,.outline,.chapters,audio,.sample-toolbar{display:none}.status{background:#fff;color:#111}section{break-inside:auto}.hero-grid,.platforms{display:block}.metric,.platforms article{margin-bottom:15px}.sample-row{break-inside:avoid}details{display:block}}
+</style></head>
+<body><a class="skip" href="#main">跳到正文</a>
+<div class="status"><span>AI REVIEW / CASE 001</span><span>公开资料评审 · 2026.10.13</span><span>静态快照 / 非司法认定</span></div>
+<header><div class="brand"><i></i><div>AI 评审工作台<small>EVIDENCE · ARGUMENT · REVIEW</small></div></div><span class="outline">离线 H5 / 2026.10.13</span></header>
+<nav aria-label="报告导航"><a href="#verdict">01 结论</a><a href="#scores">02 评分与辩论</a><a href="#evidence">03 证据核对</a><a href="#sentiment">04 舆情样本</a><a href="#timeline">05 事件还原</a><a href="#audio">06 原音频</a><a href="#sources">07 来源与方法</a></nav>
+<main id="main">
+<section id="verdict"><div class="eyebrow">CASE FILE / TIAN KEYU</div><h1>田柯宇事件：<br>哪些能信，哪些还不能下结论。</h1><p class="lead">我们更信“发生了不当干扰”这一核心事实；对田的轻微化解释保留较大疑问，也不把指控站的全部技术细节当成已经证实。</p>
+<div class="notice"><b>阅读坐标</b><span>这里的“指控方”指 sabotage 网站及其叙述，不等同于访谈中被称为“A”的另一名实习生。评分评估本次事件叙述的可信度，不评价整个人，更不是有罪概率。</span></div>
+<div class="hero-grid"><article class="metric"><div class="eyebrow">田方事件叙述</div><div class="big">4<span>/10</span></div><div class="meter"><i style="width:40%"></i></div><h3>自认可信，限制性解释待证</h3><p>承认干扰有外部印证；动机、次数和影响边界缺独立佐证。</p><small>主审综合参考分 · 四位复核最终分 3.5–4.5</small></article>
+<article class="metric"><div class="eyebrow">指控方事件叙述</div><div class="big">5.5<span>/10</span></div><div class="meter"><i style="width:55%"></i></div><h3>核心较强，完整归因链未公开</h3><p>与公司处理方向相容；具体手法、持续时段和新增展示造假指控，证据强度不同。</p><small>主审综合参考分 · 四位复核最终分 5–6</small></article>
+<article class="metric summary"><div class="eyebrow">当前舆情</div><h2>看得到负面，<br>算不出全网占比。</h2><p>B站节目可见评论偏质疑田；X 样本多数是转述或未明确表态。小红书受登录限制，未取得可编码样本。</p><a href="#sentiment">查看分母、逐条编码与缺口 ↗</a></article></div>
+<div class="section-head"><h2>先回答三个问题</h2><span>CONCLUSIONS</span></div>
+<div class="answer-list"><article><b>01</b><div><h3>两边各给几分？</h3><p>田方 <strong>4/10</strong>，指控方 <strong>5.5/10</strong>。这两个主审参考分基于对抗讨论，不是统计计算，也不要求相加等于 10。若只问“确有不当干扰”，置信显著高于两边完整故事。</p></div></article><article><b>02</b><div><h3>多少人支持田，多少人支持指控方？</h3><p>没有代表性样本，无法可靠估计人数或三平台总体比例。本次只能报告已观察帖子/评论的数量。批评田、认可技术、支持重新创业、认同网站每项指控，是四种不同立场。</p></div></article><article><b>03</b><div><h3>最符合证据的还原？</h3><p>田确实干扰过他人训练任务，公司作出纪律处理并提起诉讼；争议集中在行为有多广、如何实施和为什么实施。更可能存在双方选择性叙述：田强调动机与有限影响，指控站强调系统性破坏。现有公开材料还不能把所有异常、所有代码和新增指控完整归到同一责任链上。</p></div></article></div>
+</section>
+<section id="scores"><div class="section-head"><h2>两组对抗，保留不同意见</h2><span>ROUND 1 → CROSS REVIEW</span></div><p>田方组负责提出最强辩护和替代解释；指控方组负责提出最强指控及技术论证。每位先交初评，再反驳对组两点并承认本组一项不利事实。Kimi 独立采样，Cindy 核验和裁决。分组不代表预先认定谁对。</p>
+<div class="score-table-wrap"><table><thead><tr><th>评审 / 分组</th><th>田方 初评 → 终评</th><th>指控方 初评 → 终评</th><th>改分 / 保留理由</th></tr></thead><tbody id="score-rows"></tbody></table></div>
+<details><summary>怎样理解 0–10 分？</summary><p>0 表示完全不相信该叙述；5 表示证据混合、关键点仍未解决；10 表示完全置信。本次是主观证据判断，综合考虑来源是否直接、是否有独立印证、替代解释能否排除、材料是否完整。没有经校准的概率模型；低分不等于已证伪，高分不等于每一细节都真。</p><p>主审采用 4 与 5.5，保留个体评分差异，不把多个 AI 的同意当作多份独立事实证据。各评审共享相同公开资料，误差会相关。</p></details>
+<div class="debate-grid" id="debates"></div>
+<div class="notice"><b>本轮实际纠错</b><span>撤回“约五次得到三方确认”；保留田原话中“其他人”的限定；不从赔偿数额推论行为轻重；不把未回应后来新增指控视为撒谎；不把机器转录疑似日期错误计入已证实矛盾。</span></div>
+</section>
+<section id="evidence"><div class="section-head"><h2>逐项核对，不给整包故事盖章</h2><span>CLAIM LEDGER</span></div><div class="filters" role="group" aria-label="证据筛选"><button class="selected" data-filter="all" aria-pressed="true">全部</button><button data-filter="strong" aria-pressed="false">交叉印证</button><button data-filter="partial" aria-pressed="false">部分支持</button><button data-filter="open" aria-pressed="false">尚待证明</button></div><p class="filter-count" aria-live="polite" id="claim-count"></p><div id="claims"></div></section>
+<section id="sentiment"><div class="section-head"><h2>舆情：展示看到了什么</h2><span>OBSERVED SAMPLE ≠ POPULATION</span></div><p class="lead small-lead">负面评价确实可见。“巨大负面舆情”缺乏总量、历史基线与完整平台覆盖，本次无法量化。</p>
+<div class="platforms"><article><h3>X</h3><div class="sample-big">19<small> 条有效帖子 / 16 位作者</small></div><div class="samplebar"><i style="width:21.0526%"></i></div><p><b>支持田解释 0 · 质疑田 4 · 条件式批评 1 · 中性 11 · 信息不足 3</b></p><p>登录 Chrome 检索“田柯宇”，按最新结果滚动留存 20 条候选；排除 1 条无关玩笑。实际留存为 10/11–10/13，未遍历全部结果。转发、人才评价和含混反讽不自动归边；引用不重复计数。</p><small>4/19 条帖子质疑田，占此便利样本的 21.1%，不是 X 用户中的比例。</small></article><article><h3>B站 · 节目评论</h3><div class="sample-big">7<small> 条可见评论 / 含父子回复</small></div><div class="samplebar"><i style="width:71.4286%"></i></div><p><b>支持田解释 0 · 质疑田 5 · 中性求证 2</b></p><p>官方节目 BV1R9pf6SEVh 的匿名接口可见热评子集，去重后 7 条。含 3 条主评论和 4 条子回复，存在同一讨论串聚集，非 7 个独立抽样单位。</p><small>页面评论总量不等于本次样本量。15:30 北京时间主审复核接口计数 76，本次未读完。</small></article><article><h3>小红书</h3><div class="sample-big muted">未取得</div><p><b>支持田 / 支持指控方：未知</b></p><p>主审在当前 Chrome 打开搜索页，页面要求登录后查看结果，需扫码或验证码。未取得可编码帖子；搜索引擎缺少结果也不能证明没有舆情。</p><small>缺失平台不填 0，也不并入比例。</small></article></div>
+<div class="notice"><b>elsewhere 是否遭到批评？</b><span>B站已见 1 条明确批评节目提供“洗白”平台的评论，其他负面多针对田本人。可以确认存在这种反应，无法据此确认全平台规模。评价节目采访方式不等于证实任何技术指控。</span></div>
+<div class="sample-toolbar"><label for="platform-select">逐条查看</label><select id="platform-select"><option value="all">所有已观察样本</option><option value="X">X</option><option value="B站">B站</option></select><span id="sample-count"></span></div><div id="sample-list"></div>
+<details><summary>采样方法与不能跨越的边界</summary><p>采集日为 2026-10-13，时间均为北京时间。X 检索窗为 10/08 至 10/14（平台过滤边界），此次只读取滚动中留存的 20 条候选；长帖进入详情补全。B站为同一节目热评接口数页及排序结果的去重合集。两平台渠道、单位和曝光排序不同，因此不相加制造“三平台支持率”。</p><p>“质疑田”不代表认可指控站全部事实；条件式批评单列，未强行归边。计数单位是帖子/评论，不是人数；重复作者、讨论串、推荐算法和热评排序会放大部分观点。单一姓名检索会漏掉别称及英文写法；没有做点赞加权、机器人识别或概率抽样，不提供统计置信区间。样本中的错误事实仍可作为舆情观察，但不能进入事实证据链。</p><p>首轮检索混入 2024 年旧帖及微博内容，已从当前三平台结果剔除。未把零可见样本解释为零讨论。</p></details>
+</section>
+<section id="timeline"><div class="section-head"><h2>最有依据的事件还原</h2><span>RECONSTRUCTION / NOT A FINAL VERDICT</span></div><div class="reconstruction"><h3>主线判断</h3><p>最小确定事实是：这不是只有传言、没有行为的事件。田自认实施干扰，字节公开定性为恶意干扰并辞退；随后发生民事诉讼。所谓“后来没有下文”需要更新为“已有诉讼和判赔报道，但公开裁判文书、具体认定及二审结果仍有缺口”。</p><p>在这条主线上，指控方比田方的轻微化解释更有外部支撑；但“只做了有限操作”与“所有展示性攻击都由他长期实施”之间仍有很大空间。我们倾向于认为事件包含实际的训练干扰和团队信任受损，公开叙述却各自选择了有利部分。动机是否为资源竞争、保护同事或两者混合，目前不能可靠还原。</p><p>更强的历史还原需要：具体任务的异常时间与文件版本对应、可验证的作者/访问日志、完整调查记录，以及裁判文书。仅靠誓言、声量、代码片段或资本投资，都不足以替代这些材料。</p></div><div id="events" class="timeline"></div>
+<div class="hypotheses"><article><h3>较不符合现有证据</h3><p>“纯粹被冤枉、没有干扰”；“8000 卡与千万美元传闻已经坐实”；“获奖或融资足以洗清行为”。</p></article><article><h3>仍不能排除的版本</h3><p>田的操作范围比指控站描述窄；部分技术异常来自常见故障或其他原因；公司对具体因果和损失的认定与双方公开叙事均有差异。</p></article><article><h3>会改变评分的新材料</h3><p>可校验的日志与代码来源、具名见证者独立公开确认、原始完整判决、双方对逐项技术证据的正式回应。</p></article></div>
+</section>
+<section id="audio"><div class="section-head"><h2>原始访谈入口</h2><span>LISTEN & CHECK</span></div><div class="audio-panel"><div><div class="eyebrow">ELSEWHERE · VOL.007</div><h3>对话田柯宇：我发誓我说的都是真的</h3><p>原音频 116 分 32 秒。访谈录于 2026 年 7 月；文字版标注 10/12；小宇宙音频元数据对应北京时间 10/13 07:00。</p><p class="audio-links"><a href="https://www.xiaoyuzhoufm.com/episode/6acd2c76e742e36efcc1fe3a" target="_blank" rel="noopener noreferrer">小宇宙原节目 ↗</a><a href="https://www.bilibili.com/video/BV1R9pf6SEVh" target="_blank" rel="noopener noreferrer">B站官方视频 ↗</a><a href="https://elsewhere.news/zh/elsewhere/posting-a-podcast-transcript-of-tian-keyu-first" target="_blank" rel="noopener noreferrer">官方文字版 ↗</a></p></div><div><audio id="podcast" controls preload="none" src="https://media.xyzcdn.net/68ff657d9c745a6e69da8fcf/lq719vhbMd1uwMt-RoSKRPPCNHtJ.m4a">当前浏览器不支持音频播放，请打开原节目。</audio><p id="audio-status" aria-live="polite">由原平台提供音频；点击章节只定位，不自动播放。</p><div class="chapters"><button data-time="122">02:02 另一实习生</button><button data-time="511">08:31 GitHub 帖子</button><button data-time="945">15:45 动机解释</button><button data-time="1412">23:32 诉讼</button><button data-time="5824">1:37:04 发誓</button></div></div></div><div class="notice"><b>实际核查覆盖</b><span>两份网页中文正文已读；音频找到并下载，争议相关时段做了机器转录，未完整逐句实听。转录中的人名、日期和否定词可能出错，未将疑似日期冲突作为定案证据。文字版自身声明有删节，不等于全部音频。</span></div><p id="audio-coverage" class="fine"></p></section>
+<section id="sources"><div class="section-head"><h2>来源与审核记录</h2><span>FOLLOW THE EVIDENCE</span></div><p>当事人的陈述证明“他说了什么”；公司公告证明公司怎样定性；新闻报道与原始裁判不是同一证据等级。站内具名名单尚未取得站外独立确认。引文均为短摘或概括，原件请点击来源。</p><div id="source-list"></div><details><summary>材料快照与复核边界</summary><p>指控站核对版本：GitHub HEAD <code>4a1e3cb4af63ea7bd047974ed80658ebf90ac75b</code>（2026-10-13 14:31 北京时间提交）。网页会变化，本报告不自动更新。原始网页与采样记录在本地研究包留存；网页发布包不含会话、登录信息或私人文件。</p><p>没有访问内部集群、联系涉事人员、核验原始日志、取得完整诉状/判决书或完成全平台舆情普查。司法状态仅按已检索来源分层表述，不推定无人犯罪或有人犯罪。阅读这份报告应能找到支撑，也应看见缺口。</p></details><p class="fine">评审组织：Cindy / GPT-6 Astra；田方论证：Claude、Sonnet 5.5；指控方论证：Grok、Opus 5.5；舆情采样：Kimi 与 Cindy。报告是对公开证据的分析，不是当事人访谈调查或司法鉴定。</p></section>
+</main><footer><b>AI REVIEW / 001</b><span>把判断写清楚，把不确定性留下来。</span><a href="#verdict">返回顶部 ↑</a></footer>
+<script>const REPORT = {
+  "date": "2026-10-13",
+  "scores": {
+    "tian": 4,
+    "accusation": 5.5
+  },
+  "reviewers": [
+    {
+      "name": "Claude",
+      "group": "田方论证组",
+      "t0": 4,
+      "t1": 4,
+      "a0": 5,
+      "a1": 5,
+      "reason": "坚持代码技术自洽不能完成个人归因；音频仅作有限补充。"
+    },
+    {
+      "name": "Sonnet 5.5",
+      "group": "田方论证组",
+      "t0": 5,
+      "t1": 4.5,
+      "a0": 5,
+      "a1": 5,
+      "reason": "全文核对后首轮5/5；对田限制性解释更谨慎，保留对代码归因的质疑。"
+    },
+    {
+      "name": "Grok",
+      "group": "指控方论证组",
+      "t0": 3,
+      "t1": 3.5,
+      "a0": 7,
+      "a1": 6,
+      "reason": "不再把核心干扰托底扩为全部手法；提高对自认与判赔报道的权重。"
+    },
+    {
+      "name": "Opus 5.5",
+      "group": "指控方论证组",
+      "t0": 3,
+      "t1": 3.5,
+      "a0": 6,
+      "a1": 5.5,
+      "reason": "接受缺乏佐证不等于证伪；站外见证确认和原始归因链仍缺失。"
+    }
+  ],
+  "debates": [
+    {
+      "who": "田方组 → 指控方组",
+      "title": "代码说得通，为什么还不能认定？",
+      "argument": "对组承认展示片段与故障现象相容。田方组指出，材料缺作者、版本、执行时间与任务日志；具名名单也未独立确认。",
+      "ruling": "技术可行性与历史归因分开。指控方两位分别下调总分1分和0.5分。"
+    },
+    {
+      "who": "指控方组 → 田方组",
+      "title": "50 万和夸大传闻，能证明只是小事吗？",
+      "argument": "被澄清的是传播量级；赔偿不能直接衡量全部行为。田自认干扰仍然成立。田方组接受这些理由不能洗清责任。",
+      "ruling": "不把诉请落差当无责，也不据此补出未公开技术细节。"
+    },
+    {
+      "who": "共同校正",
+      "title": "未回应新增指控，不等于已经被驳倒",
+      "argument": "访谈录于7月，当前网站与新增展示造假指控出现在10月。时间差限制了用沉默推断说谎的效力。",
+      "ruling": "VAR内部Demo与获奖论文分开；新主张需要自己的证据链。"
+    },
+    {
+      "who": "主审 → 全体",
+      "title": "纠正误引，比制造一致更重要",
+      "argument": "首轮存在把田的“其他人”省略、把自述五次写成多方确认、把转录疑点当事实的风险，已逐项纠偏。",
+      "ruling": "保留四位不同分数；不把同源报道数、投票人数或热度当证据独立性。"
+    }
+  ],
+  "claims": [
+    {
+      "title": "01 确实干扰过他人的训练任务",
+      "grade": "strong",
+      "label": "交叉印证",
+      "assessment": "高置信。田自认实施干扰，公司也公开作出纪律定性；具体范围不随之自动确定。",
+      "support": "田在访谈承认干扰；2024公司声明确认恶意干扰研究项目并辞退。",
+      "limit": "公司原公告未公开全部技术细节；田与公司对动机和程度的表述不同。",
+      "missing": "完整调查与任务级因果记录。",
+      "sources": [
+        "S1",
+        "S3"
+      ]
+    },
+    {
+      "title": "02 只有约十天、约五次，影响范围有限",
+      "grade": "open",
+      "label": "尚待证明",
+      "assessment": "仅有田的限制性自述，不能把次数视作已经核准。",
+      "support": "访谈给出可核查的次数和范围。",
+      "limit": "媒体转述公司口径及指控站的时段更广；目前无法用原始记录裁决。语音识别的疑似日期冲突未作证据。",
+      "missing": "账户操作日志、逐次受影响任务与持续时间。",
+      "sources": [
+        "S1",
+        "S2",
+        "S4",
+        "S6"
+      ]
+    },
+    {
+      "title": "03 为了替同事出头，而非争夺算力",
+      "grade": "open",
+      "label": "尚待证明",
+      "assessment": "这是动机解释，尚无独立旁证；即使动机为真，也不改变未经授权干扰的问题。",
+      "support": "田给出团队资源争议背景。",
+      "limit": "公司的资源分配不满口径与指控方推论都不能读取人的内心；可能有混合动机。",
+      "missing": "事前沟通、资源规则和独立同事陈述。",
+      "sources": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "title": "04 更复杂的源码修改、后门与长期破坏",
+      "grade": "partial",
+      "label": "部分支持",
+      "assessment": "展示性片段具有技术可解释性，但未完成历史归因；不能将全部手法视作独立核实。",
+      "support": "指控站展示代码与故障叙事，公司处理和田自认提供核心行为背景。",
+      "limit": "“代码能造成异常”与“该人曾运行此代码造成该异常”是不同命题。共享环境中的访问记录、属主与时间链未公开。",
+      "missing": "代码原件、版本签名、完整日志、对应受影响任务。",
+      "sources": [
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "title": "05 网传 8000 卡／千万美元已被公司澄清为夸大",
+      "grade": "strong",
+      "label": "夸大已被澄清",
+      "assessment": "不能把这组流传数字当作事实底座；澄清也不等于没有实质干扰。",
+      "support": "公司公开称这组网传量级严重夸大。",
+      "limit": "实际受影响规模和损失金额仍未由公开原件确定。",
+      "missing": "损失核算、资源记录和司法采信范围。",
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "title": "06 诉讼与约 50 万元判赔报道",
+      "grade": "partial",
+      "label": "报道有支撑",
+      "assessment": "“后来没有下文”已不准确；已有诉讼及判赔报道。二审状态按访谈及编辑说明表述，不能当作我方查到的法院实时记录。",
+      "support": "2024报道诉请800万元及合理支出；2026报道出现50万元判赔。",
+      "limit": "我方未读判决书。不将工资与赔偿自行相加，不称刑事没收；不从数额较低推论无责或手段轻微。",
+      "missing": "案号、完整裁判与最新二审材料。",
+      "sources": [
+        "S4",
+        "S5",
+        "S1"
+      ]
+    },
+    {
+      "title": "07 曾否认、嫁祸他人，还是报警查发帖者",
+      "grade": "open",
+      "label": "双方说法冲突",
+      "assessment": "早期报道转述与访谈存在矛盾，但未拿到足以裁决的原始发言和报警材料。",
+      "support": "媒体报道内部人士说法；田给出另一解释。",
+      "limit": "报道同源转述不是多份独立证言；不能把未核实的身份指认扩散成事实。",
+      "missing": "当时公开原帖、笔录和上下文完整记录。",
+      "sources": [
+        "S1",
+        "S4"
+      ]
+    },
+    {
+      "title": "08 内部 VAR 文生图 Demo 冒用 PixArt",
+      "grade": "open",
+      "label": "新增主张待证",
+      "assessment": "本次指控站提出的另一项主张，单独评估；不能泛化成获奖论文造假。",
+      "support": "网站给出具体可检验的部署叙述。",
+      "limit": "未取得部署包、当时演示留档或独立验证。站方另明确不评价NeurIPS VAR论文。7月访谈未回应10月新材料，不等于撒谎。",
+      "missing": "原始部署、展示日志、模型身份验证与当事人专项回应。",
+      "sources": [
+        "S2",
+        "S9",
+        "S8"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "short": "访谈文字版",
+      "title": "elsewhere：先发一个田柯宇的播客文字版",
+      "url": "https://elsewhere.news/zh/elsewhere/posting-a-podcast-transcript-of-tian-keyu-first",
+      "note": "2026-10-12。原文中文已读。受访者自述与编辑说明；明确称存在删节。"
+    },
+    {
+      "id": "S2",
+      "short": "指控站",
+      "title": "2024 年模型训练攻击事件：受害者陈述与证据整理",
+      "url": "https://keyu-tian-sabotage.github.io/",
+      "note": "页标2026-10-12，仓库版本见下。中文全文、展示性代码与具名名单已读；原始调查日志与代码包未取得。"
+    },
+    {
+      "id": "S3",
+      "short": "公司澄清转载",
+      "title": "IT之家：字节跳动回应实习生干扰模型训练事件",
+      "url": "https://www.ithome.com/0/803/562.htm",
+      "note": "2024-10-19。完整转载公司澄清，含公告图片；不是法院认定。"
+    },
+    {
+      "id": "S4",
+      "short": "诉讼报道",
+      "title": "广州日报：字节跳动起诉攻击模型训练实习生",
+      "url": "https://news.dayoo.com/finance/202411/28/171077_54753014.htm",
+      "note": "2024-11-28。报道法院受理和诉请，转述11月内部通报；未取得诉状原件。"
+    },
+    {
+      "id": "S5",
+      "short": "判赔报道",
+      "title": "Moneyweb 转刊 Bloomberg：Ex-ByteDance intern’s $200m AI lab",
+      "url": "https://www.moneyweb.co.za/news-fast-news/ex-bytedance-interns-200m-ai-lab-takes-on-fei-fei-li/",
+      "note": "2026-10-08。彭博称看过判决、报道50万元给付。我方未见裁判原文。"
+    },
+    {
+      "id": "S6",
+      "short": "原音频",
+      "title": "小宇宙：elsewhere Vol.007",
+      "url": "https://www.xiaoyuzhoufm.com/episode/6acd2c76e742e36efcc1fe3a",
+      "note": "节目原页及元数据，6992秒；pubDate=2026-10-12T23:00:00Z，折合北京时间10/13 07:00。"
+    },
+    {
+      "id": "S7",
+      "short": "官方视频",
+      "title": "B站：elsewhere 田柯宇访谈",
+      "url": "https://www.bilibili.com/video/BV1R9pf6SEVh",
+      "note": "节目评论采样入口。评论属舆情资料，不是对指控事实的独立证实。"
+    },
+    {
+      "id": "S8",
+      "short": "获奖原始记录",
+      "title": "NeurIPS 2024 Best Paper Awards",
+      "url": "https://media.neurips.cc/Conferences/NeurIPS2024/NeurIPS2024_Best_Paper_Awards.pdf",
+      "note": "官方获奖列表，用于核对论文获奖事实；获奖不替代行为调查。"
+    },
+    {
+      "id": "S9",
+      "short": "站方范围说明",
+      "title": "GitHub Issue #1：VAR vs pixart",
+      "url": "https://github.com/keyu-tian-sabotage/keyu-tian-sabotage.github.io/issues/1",
+      "note": "2026-10-13。站方明确其内部文生图展示指控与NeurIPS VAR论文内容分开；仍是站方说法。"
+    },
+    {
+      "id": "S10",
+      "short": "版本记录",
+      "title": "指控站 GitHub 固定版本",
+      "url": "https://github.com/keyu-tian-sabotage/keyu-tian-sabotage.github.io/tree/4a1e3cb4af63ea7bd047974ed80658ebf90ac75b",
+      "note": "固定本次阅读版本。GitHub提交证明网页版本，不能验证内网证据的历史真实性。"
+    },
+    {
+      "id": "S11",
+      "short": "B站复核接口",
+      "title": "B站评论公开接口：排序2第1页",
+      "url": "https://api.bilibili.com/x/v2/reply?type=1&oid=117430059795263&sort=2&ps=20&pn=1",
+      "note": "主审于2026-10-13 15:30:48复核，接口总计数76；原始去重样本7条来自数页/排序合集，非全部评论。"
+    },
+    {
+      "id": "S12",
+      "short": "X采样入口",
+      "title": "X：田柯宇，近期最新搜索",
+      "url": "https://x.com/search?q=%22%E7%94%B0%E6%9F%AF%E5%AE%87%22%20since%3A2026-10-08%20until%3A2026-10-14&src=typed_query&f=live",
+      "note": "当前用户登录Chrome读取；结果随账号/时间变化。逐条原帖见样本表。"
+    }
+  ],
+  "samples": [
+    {
+      "id": "X01",
+      "author": "Charles77xixi",
+      "url": "https://x.com/Charles77xixi/status/2109907119826952390",
+      "time": "2026-10-13 15:20 +08:00",
+      "stance": "条件式批评",
+      "reason": "以指控属实为条件，质疑其品格及融资；条件式批评",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X02",
+      "author": "jakevin7",
+      "url": "https://x.com/jakevin7/status/2109905576746799427",
+      "time": "2026-10-13 15:14 +08:00",
+      "stance": "中性转述/未表态",
+      "reason": "转发指控网站并建议了解上下文，没有明确逐项认同",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X03",
+      "author": "0xLogicrw",
+      "url": "https://x.com/0xLogicrw/status/2109905005142777963",
+      "time": "2026-10-13 15:12 +08:00",
+      "stance": "中性转述/未表态",
+      "reason": "全文转述双方说法，未明确站队；已打开详情",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X04",
+      "author": "0xTykoo",
+      "url": "https://x.com/0xTykoo/status/2109891456597205354",
+      "time": "2026-10-13 14:18 +08:00",
+      "stance": "中性转述/未表态",
+      "reason": "转述指控并解释其暗示动机，未明确确认属实；已打开全文",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X05",
+      "author": "rollrollyuan",
+      "url": "https://x.com/rollrollyuan/status/2109870408086487109",
+      "time": "2026-10-13 12:54 +08:00",
+      "stance": "中性转述/未表态",
+      "reason": "分享指控站标题与链接，转发本身不计支持",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X06",
+      "author": "feiyuxiaothu",
+      "url": "https://x.com/feiyuxiaothu/status/2109820886723506422",
+      "time": "2026-10-13 09:37 +08:00",
+      "stance": "质疑田",
+      "reason": "反讽其正义动机和GPT解释；引用他人批评，不把引用再计一票",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X07",
+      "author": "fan_zhengjia",
+      "url": "https://x.com/fan_zhengjia/status/2109693091783626936",
+      "time": "2026-10-13 01:10 +08:00",
+      "stance": "排除",
+      "reason": "名字带宇的AI人物玩笑，与事件立场无关",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X08",
+      "author": "0xTykoo",
+      "url": "https://x.com/0xTykoo/status/2109685397148320257",
+      "time": "2026-10-13 00:39 +08:00",
+      "stance": "中性转述/未表态",
+      "reason": "明确按田自己的说法复述访谈，非背书；已打开全文",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X09",
+      "author": "yongleluo",
+      "url": "https://x.com/yongleluo/status/2109683260733428182",
+      "time": "2026-10-13 00:31 +08:00",
+      "stance": "信息不足",
+      "reason": "短句急公好义可能反讽，配图未判读，不强行定向",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X10",
+      "author": "0xTykoo",
+      "url": "https://x.com/0xTykoo/status/2109682237952450792",
+      "time": "2026-10-13 00:26 +08:00",
+      "stance": "信息不足",
+      "reason": "评论二审期间高调并提美国创业，语气含混",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X11",
+      "author": "xiongdabang",
+      "url": "https://x.com/xiongdabang/status/2109549631155671416",
+      "time": "2026-10-12 15:40 +08:00",
+      "stance": "信息不足",
+      "reason": "融资新闻标题，没有明确支持哪方",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X12",
+      "author": "Ocean_Yu1",
+      "url": "https://x.com/Ocean_Yu1/status/2109467583363924028",
+      "time": "2026-10-12 10:13 +08:00",
+      "stance": "中性转述/未表态",
+      "reason": "资讯汇总，区分估值和产品落地；已读全文",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X13",
+      "author": "nbklsi",
+      "url": "https://x.com/nbklsi/status/2109299992514986074",
+      "time": "2026-10-11 23:08 +08:00",
+      "stance": "质疑田",
+      "reason": "批评踩规则后技术成为通行证；虽邀请投票仍有作者立场，已读全文",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X14",
+      "author": "weichonginsight",
+      "url": "https://x.com/weichonginsight/status/2109291909877547070",
+      "time": "2026-10-11 22:35 +08:00",
+      "stance": "质疑田",
+      "reason": "认可才能但明确批评诚信并认可辞退；已读全文",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X15",
+      "author": "Jjay399306Jjay",
+      "url": "https://x.com/Jjay399306Jjay/status/2109274706478309660",
+      "time": "2026-10-11 21:27 +08:00",
+      "stance": "中性转述/未表态",
+      "reason": "调侃失业与融资的反差，未对事件真假表态",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X16",
+      "author": "Jjay399306Jjay",
+      "url": "https://x.com/Jjay399306Jjay/status/2109273741108896172",
+      "time": "2026-10-11 21:23 +08:00",
+      "stance": "中性转述/未表态",
+      "reason": "同一作者补充创业估值，单位为帖子而非人数",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X17",
+      "author": "KarlaJohns53492",
+      "url": "https://x.com/KarlaJohns53492/status/2109251627878432924",
+      "time": "2026-10-11 19:55 +08:00",
+      "stance": "中性转述/未表态",
+      "reason": "以黑色幽默描述技术与职场，未明确认同一方；已读全文",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X18",
+      "author": "gpsma2025",
+      "url": "https://x.com/gpsma2025/status/2109233935603667247",
+      "time": "2026-10-11 18:45 +08:00",
+      "stance": "质疑田",
+      "reason": "批评道德和资本；帖中终审赔800万元等与本次核查冲突，只作舆情证据",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X19",
+      "author": "_luckyj888",
+      "url": "https://x.com/_luckyj888/status/2109215335576641746",
+      "time": "2026-10-11 17:31 +08:00",
+      "stance": "中性转述/未表态",
+      "reason": "肯定论文实力、等待产品，不等于支持其事件解释",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "X20",
+      "author": "W2679966465",
+      "url": "https://x.com/W2679966465/status/2109215272636932170",
+      "time": "2026-10-11 17:31 +08:00",
+      "stance": "中性转述/未表态",
+      "reason": "比较年轻AI从业者并提问，未表态",
+      "negative_elsewhere": false,
+      "platform": "X"
+    },
+    {
+      "id": "B01",
+      "platform": "B站",
+      "time": "2026-10-13 11:47:29",
+      "stance": "质疑田",
+      "url": "https://www.bilibili.com/video/BV1R9pf6SEVh#reply316914699377",
+      "reason": "批评田将干扰行为说轻，采信更复杂的破坏说法；评论不是原始技术证据。 主评论。",
+      "negative_elsewhere": false
+    },
+    {
+      "id": "B02",
+      "platform": "B站",
+      "time": "2026-10-13 12:17:40",
+      "stance": "中性求证",
+      "url": "https://www.bilibili.com/video/BV1R9pf6SEVh#reply320554798384",
+      "reason": "向上级评论索要信息源；不视作支持某方。 同一热评下的子回复。",
+      "negative_elsewhere": false
+    },
+    {
+      "id": "B03",
+      "platform": "B站",
+      "time": "2026-10-13 12:49:02",
+      "stance": "中性求证",
+      "url": "https://www.bilibili.com/video/BV1R9pf6SEVh#reply320558097936",
+      "reason": "推测信息来自公司报告，未明确表态。 同一热评下的子回复。",
+      "negative_elsewhere": false
+    },
+    {
+      "id": "B04",
+      "platform": "B站",
+      "time": "2026-10-13 13:06:48",
+      "stance": "质疑田",
+      "url": "https://www.bilibili.com/video/BV1R9pf6SEVh#reply320559739056",
+      "reason": "强烈谴责田并主张刑罚；这是评论者态度，不是刑事裁判。 同一热评下的子回复。",
+      "negative_elsewhere": false
+    },
+    {
+      "id": "B05",
+      "platform": "B站",
+      "time": "2026-10-13 13:42:50",
+      "stance": "质疑田",
+      "url": "https://www.bilibili.com/video/BV1R9pf6SEVh#reply320562811344",
+      "reason": "质疑田自我辩解；不采用评论中的人格标签作事实。 主评论。",
+      "negative_elsewhere": false
+    },
+    {
+      "id": "B06",
+      "platform": "B站",
+      "time": "2026-10-13 13:45:35",
+      "stance": "质疑田",
+      "url": "https://www.bilibili.com/video/BV1R9pf6SEVh#reply320563049856",
+      "reason": "以发生诉讼为由质疑有限干扰解释；该推理本身不能证明指控细节。 同一热评下的子回复。",
+      "negative_elsewhere": false
+    },
+    {
+      "id": "B07",
+      "platform": "B站",
+      "time": "2026-10-13 14:39:26",
+      "stance": "质疑田",
+      "url": "https://www.bilibili.com/video/BV1R9pf6SEVh#reply316929058177",
+      "reason": "批评节目给田提供洗白平台，是本样本中明确针对节目的一条。 主评论。",
+      "negative_elsewhere": true
+    }
+  ],
+  "events": [
+    {
+      "date": "2024.03–07",
+      "title": "指控方提出的较长行为时段",
+      "text": "此为网站回溯叙事，不是本报告已核实的完整攻击时间线。田给出的时长较短。",
+      "sources": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "date": "2024.08",
+      "title": "实习关系解除",
+      "text": "公司后续公告称已于8月辞退涉事实习生。",
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "date": "2024.10.19",
+      "title": "公司公开确认核心违纪，同时纠正夸大传闻",
+      "text": "把“存在干扰”与“传播中的规模数字”区分，是本案判断的基础。",
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "date": "2024.11",
+      "title": "诉讼进入公开报道",
+      "text": "11月28日报道法院受理、索赔及道歉请求；诉请不等于法院认可的损失。",
+      "sources": [
+        "S4"
+      ]
+    },
+    {
+      "date": "2024.12",
+      "title": "NeurIPS 获奖",
+      "text": "官方记录可核对VAR论文获奖。学术成果与职业行为分开评价。",
+      "sources": [
+        "S8"
+      ]
+    },
+    {
+      "date": "2026.07",
+      "title": "访谈录制",
+      "text": "出版方说明录制距发布已约三个月。应按当时已知材料理解回应范围。",
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "date": "2026.10.08",
+      "title": "判赔与创业消息见诸报道",
+      "text": "彭博称看过判决，报道50万元给付。完整认定需原件。",
+      "sources": [
+        "S5"
+      ]
+    },
+    {
+      "date": "2026.10.12–13",
+      "title": "文字版、音频与指控站进入当前讨论",
+      "text": "双方材料不是对等的法庭质证；当前舆情也会不断变化。",
+      "sources": [
+        "S1",
+        "S2",
+        "S6"
+      ]
+    }
+  ],
+  "audioCoverage": "音频核查：00:00–38:00 与 1:33:00–实际结尾 1:56:32，共约61分32秒机器转录；38:00–1:33:00（节目标注为科研/创业/世界模型段）未转录。未声称已完整听完，也未把全部转录字词当作无误原话。"
+};
+</script><script>const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const link=(u,t)=>`<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(t)}</a>`;
+$('#score-rows').innerHTML=REPORT.reviewers.map(r=>`<tr><td><b>${esc(r.name)}</b><span class="group">${esc(r.group)}</span></td><td>${r.t0} → <b>${r.t1}</b></td><td>${r.a0} → <b>${r.a1}</b></td><td>${esc(r.reason)}</td></tr>`).join('');
+$('#debates').innerHTML=REPORT.debates.map(d=>`<article class="debate"><span class="who">${esc(d.who)}</span><h3>${esc(d.title)}</h3><p>${esc(d.argument)}</p><p class="ruling"><b>主审判断：</b>${esc(d.ruling)}</p></article>`).join('');
+function claims(filter='all'){const a=REPORT.claims.filter(c=>filter==='all'||c.grade===filter);$('#claim-count').textContent=`显示 ${a.length} / ${REPORT.claims.length} 项；标签表示证据状态，不是法律结论。`;$('#claims').innerHTML=a.map(c=>`<article class="claim"><div class="claim-head"><h3>${esc(c.title)}</h3><span class="tag ${c.grade}">${esc(c.label)}</span></div><p class="assessment">${esc(c.assessment)}</p><details><summary>支持、反证与缺失材料</summary><p><b>支持：</b>${esc(c.support)}</p><p><b>限制：</b>${esc(c.limit)}</p><p><b>还缺：</b>${esc(c.missing)}</p></details><div class="source-refs">${c.sources.map(id=>`<a href="#src-${id}">[${id}] ${esc(REPORT.sources.find(s=>s.id===id).short)}</a>`).join('')}</div></article>`).join('');}
+document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>{x.classList.toggle('selected',x===b);x.setAttribute('aria-pressed',String(x===b));});claims(b.dataset.filter);}));claims();
+function samples(){const platform=$('#platform-select').value;const a=REPORT.samples.filter(s=>platform==='all'||s.platform===platform);$('#sample-count').textContent=`${a.length} 条记录（含排除项）`;$('#sample-list').innerHTML=a.map(s=>`<article class="sample-row ${s.stance==='排除'?'excluded':''}"><div><b>${esc(s.id)} · ${esc(s.platform)}</b><div class="meta">${esc(s.time)}</div></div><div class="stance ${s.stance.startsWith('质疑')?'critical':''}">${esc(s.stance)}</div><div class="reason">${esc(s.reason)}${s.negative_elsewhere?'<span class="sample-note">明确针对节目平台的负面评价</span>':''}</div><div class="origin">${link(s.url,'原帖 ↗')}</div></article>`).join('');}$('#platform-select').addEventListener('change',samples);samples();
+$('#events').innerHTML=REPORT.events.map(e=>`<article class="event"><time>${esc(e.date)}</time><div><h3>${esc(e.title)}</h3><p>${esc(e.text)}</p><div class="source-refs">${e.sources.map(id=>`<a href="#src-${id}">[${id}]</a>`).join('')}</div></div></article>`).join('');
+$('#source-list').innerHTML=REPORT.sources.map(s=>`<article class="source" id="src-${s.id}"><b>${s.id}</b><div>${link(s.url,s.title+' ↗')}<p>${esc(s.note)}</p></div></article>`).join('');
+$('#audio-coverage').textContent=REPORT.audioCoverage;
+const player=$('#podcast');let requestedTime=null;document.querySelectorAll('[data-time]').forEach(b=>b.addEventListener('click',()=>{requestedTime=Number(b.dataset.time);if(player.readyState>0)player.currentTime=requestedTime;else player.load();$('#audio-status').textContent=`已选择 ${b.textContent}；请点播放收听。`;}));player.addEventListener('loadedmetadata',()=>{if(requestedTime!==null)player.currentTime=requestedTime;});player.addEventListener('error',()=>{$('#audio-status').textContent='原平台音频暂不可直接加载，请使用小宇宙或 B站原节目链接。';});
+const observer=new IntersectionObserver(items=>{items.filter(x=>x.isIntersecting).forEach(x=>{document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('active',a.hash==='#'+x.target.id));});},{rootMargin:'-10% 0px -70% 0px'});document.querySelectorAll('main>section').forEach(s=>observer.observe(s));
+</script></body></html>
