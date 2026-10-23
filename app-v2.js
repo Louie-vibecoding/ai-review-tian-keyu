@@ -18,28 +18,4 @@
   q('#v2-corrections').innerHTML=REPORT_V2.corrections.map(c=>`<li>${safe(c)}</li>`).join('');
   q('#v2-sources').innerHTML=REPORT_V2.sources.map(s=>`<article class="source" id="v2-src-${s.id}"><b>${safe(s.id)}</b><div><a href="${safe(s.url)}" target="_blank" rel="noopener noreferrer">${safe(s.title)} ↗</a><p>${safe(s.note)}</p></div></article>`).join('');
   q('#v2-methods').innerHTML=Object.values(REPORT_V2.methods).map(t=>`<p>${safe(t)}</p>`).join('');
-  const buttons=[...document.querySelectorAll('[data-edition]')];
-  function activate(name,{changeHash=false,scroll=false}={}){
-    const v2=name==='v2';q('#edition-v1').hidden=v2;q('#edition-v2').hidden=!v2;
-    buttons.forEach(b=>{const on=b.dataset.edition===name;b.setAttribute('aria-selected',String(on));b.tabIndex=on?0:-1;});
-    q('.skip').href=v2?'#v2-main':'#main';q('footer a').href=v2?'#v2-verdict':'#verdict';
-    if(v2){const player=q('#podcast');if(player&&!player.paused)player.pause();}
-    if(changeHash)history.replaceState(null,'',`#edition-${name}`);
-    if(scroll)window.scrollTo({top:0,behavior:'auto'});
-  }
-  buttons.forEach((b,i)=>{
-    b.addEventListener('click',()=>activate(b.dataset.edition,{changeHash:true,scroll:true}));
-    b.addEventListener('keydown',e=>{
-      let idx;if(e.key==='ArrowRight')idx=(i+1)%buttons.length;else if(e.key==='ArrowLeft')idx=(i+buttons.length-1)%buttons.length;else if(e.key==='Home')idx=0;else if(e.key==='End')idx=buttons.length-1;else return;
-      e.preventDefault();buttons[idx].focus();activate(buttons[idx].dataset.edition,{changeHash:true,scroll:true});
-    });
-  });
-  function route(){
-    let hash;try{hash=decodeURIComponent(location.hash.slice(1));}catch{hash='';}
-    const target=document.getElementById(hash);
-    const isV1=hash==='edition-v1'||(target&&q('#edition-v1').contains(target));
-    activate(isV1?'v1':'v2');
-    if(target&&hash!=='edition-v1'&&hash!=='edition-v2')requestAnimationFrame(()=>target.scrollIntoView());
-  }
-  addEventListener('hashchange',route);route();
 })();
